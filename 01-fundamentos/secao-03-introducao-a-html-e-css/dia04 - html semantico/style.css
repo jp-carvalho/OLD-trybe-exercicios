@@ -36,9 +36,10 @@ display: inline-block;
 margin-right: 150px;
 }
 
-.prize li{ /* como alinhar centro */
+.prize li{ /* como alinhar centro??????? */
     list-style: none;
-    display: inline;
+    display: inline-flex;
+    justify-content: center;
     background-color: aquamarine;
 }
 
