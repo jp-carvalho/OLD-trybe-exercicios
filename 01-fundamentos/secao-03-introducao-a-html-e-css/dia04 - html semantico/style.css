@@ -35,12 +35,35 @@ body {
 }
 
 .sidebar {
+    font-size: 100%;
+    text-align: center;
+    text-decoration: none;
     background-color: lightgrey;
     margin: 10px;
     padding: 20px;
     width: 15%;
     display: inline-block;
     vertical-align: top;
+}
+
+.video {
+    font-size: 14px;
+}
+.video a{
+    text-decoration: none;
+    font-size: 14px;
+}
+.references ul{
+    list-style: none;
+    font-size: 14px;
+}
+.references a{
+    text-decoration: none;
+    font-size: 14px;
+}
+.references h4{
+    margin-top: 50px;
+    font-size: 14px;
 }
 
 /* footer */
