@@ -38,8 +38,7 @@ margin-right: 150px;
 
 .prize li{ /* como alinhar centro??????? */
     list-style: none;
-    display: inline-flex;
-    justify-content: center;
+    display: inline-block;
     background-color: aquamarine;
 }
 
