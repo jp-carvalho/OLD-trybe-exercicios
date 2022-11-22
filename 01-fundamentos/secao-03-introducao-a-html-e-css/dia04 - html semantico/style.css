@@ -27,11 +27,51 @@ body {
     font-family: monospace;
 }
 
-.main-content {
+.main-content{
     text-align: center;
+    margin-top: 20px;
     width: 70%;
     display: inline-block;
+}
+
+img {
+    width: 400px;
+}
+.about {
     background-color: aqua;
+}
+
+.potency {
+    background-color: blueviolet;
+    height: 400px;
+}
+.potency h3 {
+    margin-top: 20px;
+    font-size: 30px;
+}
+.potency img {
+    float: left;
+    padding: 15px;
+    height: 300px;
+}
+.potency p{
+    margin-top: 10px;
+}
+
+.vision {
+    margin-top: 10px;
+    background-color: yellow;
+}
+
+.vision h3 {
+    font-size: 30px;
+}
+.vision img {
+    padding: 15px;
+    height: 300px;
+}
+.vision p{
+    margin-top: 10px;
 }
 
 .sidebar {
