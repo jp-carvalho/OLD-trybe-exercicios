@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    display: flex;
+    padding: 15px;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 800;
+    gap: 25px;
+    background-color: black;
+    color: white;
+}
+
+body {
+    text-align: center;
+    font-family: monospace;
+}
+main {
+    margin-top: 20px;
+}
+main h1 {
+    border: 2px solid black;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+img {
+    padding: 15px;
+}
