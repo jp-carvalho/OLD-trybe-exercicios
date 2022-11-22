@@ -40,12 +40,16 @@ body ul li a:hover{
     font-weight: bolder;
 }
 
-/* Porque não funciona?  */
-body ul li:nth-of-type(1) { 
+/* Porque não funciona? Pinta todos */
+.sites li a:hover:nth-child(1) { 
     color: orange;
+}
+.sites li a:hover:nth-child(2) { 
+    color: rgb(63, 25, 168);
 }
 
-/* gabarito */
-.sites li a[href*="stackoverflow"] {
-    color: orange;
-}
+
+/* resposta do gabarito */
+/* .sites li a[href*="stackoverflow"] { */
+    /* color: orange; */
+/* } */
