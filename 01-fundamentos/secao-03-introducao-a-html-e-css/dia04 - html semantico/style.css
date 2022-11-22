@@ -51,7 +51,7 @@ img {
     padding: 20px;
     width: 400px;
 }
-.content h3{
+.content h2{
     font-size: 25px;
 }
 
@@ -120,7 +120,7 @@ img {
     color: black;
     font-weight: 900;
 }
-.references h4{
+.references h3{
     margin-top: 100px;
     font-size: 18px;
 }
