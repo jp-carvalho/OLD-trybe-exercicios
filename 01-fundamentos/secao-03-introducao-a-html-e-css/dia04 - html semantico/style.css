@@ -39,22 +39,31 @@ body {
     width: 70%;
     display: inline-block;
 }
-
+table, th, td {
+    border: 2px solid;
+    margin-left: auto;
+    margin-right: auto;
+}
 img {
     width: 400px;
 }
+.content h3{
+    font-size: 25px;
+}
+
 .about {
     background-color: aqua;
+}
+.about p{
+    margin-bottom: 15px;
 }
 
 .potency {
     background-color: blueviolet;
     height: 400px;
+    margin-top: 10px;
 }
-.potency h3 {
-    margin-top: 20px;
-    font-size: 30px;
-}
+
 .potency img {
     float: left;
     padding: 15px;
@@ -69,9 +78,6 @@ img {
     background-color: yellow;
 }
 
-.vision h3 {
-    font-size: 30px;
-}
 .vision img {
     padding: 15px;
     height: 300px;
