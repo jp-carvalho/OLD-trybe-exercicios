@@ -7,6 +7,12 @@ text-align: center;
     list-style: none;
 }
 
+.prize li{ /* como alinhar centro??????? */
+    display: inline-block;
+    text-align: center;
+    background-color: aquamarine;
+}
+
 .first {
 background-color: rgb(235, 200, 84);
 font-size: 20px;
@@ -36,11 +42,7 @@ display: inline-block;
 margin-right: 150px;
 }
 
-.prize li{ /* como alinhar centro??????? */
-    list-style: none;
-    display: inline-block;
-    background-color: aquamarine;
-}
+
 
 h3 {
     text-align: center;
