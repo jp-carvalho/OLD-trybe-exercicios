@@ -93,27 +93,40 @@
 //     }
 
 //exercicio 6
+// const nota = 100;
 
-const nota = 100;
+//     if (nota >= 90 && nota < 100 ) {
+//         console.log('A');
+//     }
+//     else if ( nota >= 80 && nota < 90 ){
+//         console.log('B');
+//     }
+//     else if ( nota >= 70 && nota < 80 ){
+//         console.log('C');
+//     }
+//     else if ( nota >= 60 && nota < 70 ){
+//         console.log('D');
+//     }
+//     else if ( nota >= 50 && nota < 60 ){
+//         console.log('E');
+//     }
+//     else if ( nota < 50 ){
+//         console.log('F');
+//     }
+//     else {
+//         console.log('Error')
+//     }
 
-    if (nota >= 90 && nota < 100 ) {
-        console.log('A');
-    }
-    else if ( nota >= 80 && nota < 90 ){
-        console.log('B');
-    }
-    else if ( nota >= 70 && nota < 80 ){
-        console.log('C');
-    }
-    else if ( nota >= 60 && nota < 70 ){
-        console.log('D');
-    }
-    else if ( nota >= 50 && nota < 60 ){
-        console.log('E');
-    }
-    else if ( nota < 50 ){
-        console.log('F');
-    }
-    else {
-        console.log('Error')
-    }
+//exercicio 7
+const num1 = 10;
+
+const num2 = 17;
+
+const num3 = 33;
+
+if ( num1 %2 === 0 || num2 % 2 === 0 || num3 % 2 === 0) {
+    console.log('true');
+}
+else {
+    console.log(false);
+}
