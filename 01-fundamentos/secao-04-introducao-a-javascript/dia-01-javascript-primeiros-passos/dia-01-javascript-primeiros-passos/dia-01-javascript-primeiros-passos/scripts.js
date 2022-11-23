@@ -42,24 +42,52 @@
 // }
 
 //exercicio 4 
-const angle1 = 50;
+// const angle1 = 50;
 
-const angle2 = 90;
+// const angle2 = 90;
 
-const angle3 = -40;
+// const angle3 = -40;
 
-let sumAngle = angle1 + angle2 + angle3;
+// let sumAngle = angle1 + angle2 + angle3;
 
-let positives = angle1 >0 && angle2 >0 && angle3 >0;
+// let positives = angle1 >0 && angle2 >0 && angle3 >0;
 
-if ( positives ){
-    if ( sumAngle === 180 ){
-        console.log(true);
+// if ( positives ){
+//     if ( sumAngle === 180 ){
+//         console.log(true);
+//     }
+//     else {
+//         console.log(false);
+//     };
+// }
+// else {
+//         console.log('Erro: Angulo negativo');
+// }
+
+//exercicio 5
+const chessPiece = 'PeãO';
+
+    switch (chessPiece.toLowerCase()) {
+        case 'peão':
+            console.log('Se move apenas para a frente');
+            break;
+        
+        case 'torre':
+            console.log('Qualquer numero de casas para frente ou lados')
+            break;
+
+        case 'bispo':
+            console.log('Qualquer numero de casas na Diagonal');
+            break;
+
+        case 'rainha':
+            console.log('Quantas casas quiser em qualquer direção');
+            break;
+
+        case 'rei':
+            console.log('Uma casa em qualquer direção');
+            break;
+        
+        default:
+            console.log('Peça Inválida');
     }
-    else {
-        console.log(false);
-    };
-}
-else {
-        console.log('Erro: Angulo negativo');
-}
