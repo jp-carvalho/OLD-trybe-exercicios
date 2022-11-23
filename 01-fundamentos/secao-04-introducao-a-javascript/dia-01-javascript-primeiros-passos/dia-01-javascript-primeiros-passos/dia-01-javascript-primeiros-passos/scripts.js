@@ -1,11 +1,9 @@
-let myName = "Joao Paulo";
-const birthCity = "Rio de Janeiro";
-let birtYear = 1984;
+const base = 5;
 
-birtYear = 2030;
+const heigth = 8;
 
-// birthCity = "Angola";
+const area = base * heigth;
 
-console.log(myName, birthCity, birtYear);
-
-// const não se altera valor
+const perimeter = ( 5+5+8+8)
+console.log(area);
+console.log(perimeter);
