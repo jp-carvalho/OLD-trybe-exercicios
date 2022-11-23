@@ -118,13 +118,27 @@
 //     }
 
 //exercicio 7
+// const num1 = 10;
+
+// const num2 = 17;
+
+// const num3 = 33;
+
+// if ( num1 %2 === 0 || num2 % 2 === 0 || num3 % 2 === 0) {
+//     console.log('true');
+// }
+// else {
+//     console.log(false);
+// }
+
+//exercicio8
 const num1 = 10;
 
-const num2 = 17;
+const num2 = 12;
 
-const num3 = 33;
+const num3 = 34;
 
-if ( num1 %2 === 0 || num2 % 2 === 0 || num3 % 2 === 0) {
+if ( num1 %2 !== 0 || num2 % 2 !== 0 || num3 % 2 !== 0) {
     console.log('true');
 }
 else {
