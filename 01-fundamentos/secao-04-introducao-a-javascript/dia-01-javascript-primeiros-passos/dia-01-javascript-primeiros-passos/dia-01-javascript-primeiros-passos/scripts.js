@@ -65,29 +65,55 @@
 // }
 
 //exercicio 5
-const chessPiece = 'PeãO';
+// const chessPiece = 'PeãO';
 
-    switch (chessPiece.toLowerCase()) {
-        case 'peão':
-            console.log('Se move apenas para a frente');
-            break;
+//     switch (chessPiece.toLowerCase()) {
+//         case 'peão':
+//             console.log('Se move apenas para a frente');
+//             break;
         
-        case 'torre':
-            console.log('Qualquer numero de casas para frente ou lados')
-            break;
+//         case 'torre':
+//             console.log('Qualquer numero de casas para frente ou lados')
+//             break;
 
-        case 'bispo':
-            console.log('Qualquer numero de casas na Diagonal');
-            break;
+//         case 'bispo':
+//             console.log('Qualquer numero de casas na Diagonal');
+//             break;
 
-        case 'rainha':
-            console.log('Quantas casas quiser em qualquer direção');
-            break;
+//         case 'rainha':
+//             console.log('Quantas casas quiser em qualquer direção');
+//             break;
 
-        case 'rei':
-            console.log('Uma casa em qualquer direção');
-            break;
+//         case 'rei':
+//             console.log('Uma casa em qualquer direção');
+//             break;
         
-        default:
-            console.log('Peça Inválida');
+//         default:
+//             console.log('Peça Inválida');
+//     }
+
+//exercicio 6
+
+const nota = 100;
+
+    if (nota >= 90 && nota < 100 ) {
+        console.log('A');
+    }
+    else if ( nota >= 80 && nota < 90 ){
+        console.log('B');
+    }
+    else if ( nota >= 70 && nota < 80 ){
+        console.log('C');
+    }
+    else if ( nota >= 60 && nota < 70 ){
+        console.log('D');
+    }
+    else if ( nota >= 50 && nota < 60 ){
+        console.log('E');
+    }
+    else if ( nota < 50 ){
+        console.log('F');
+    }
+    else {
+        console.log('Error')
     }
