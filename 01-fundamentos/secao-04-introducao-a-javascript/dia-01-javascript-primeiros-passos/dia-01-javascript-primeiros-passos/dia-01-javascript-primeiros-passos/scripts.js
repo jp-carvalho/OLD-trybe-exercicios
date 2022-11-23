@@ -132,15 +132,31 @@
 // }
 
 //exercicio8
-const num1 = 10;
+// const num1 = 10;
 
-const num2 = 12;
+// const num2 = 12;
 
-const num3 = 34;
+// const num3 = 34;
 
-if ( num1 %2 !== 0 || num2 % 2 !== 0 || num3 % 2 !== 0) {
-    console.log('true');
+// if ( num1 %2 !== 0 || num2 % 2 !== 0 || num3 % 2 !== 0) {
+//     console.log('true');
+// }
+// else {
+//     console.log(false);
+// }
+
+//exercicio9
+const cost = 1;
+
+const sell = 2;
+
+let totalCost = cost * 1.2;
+
+if( cost > 0 && sell > 0 ){
+    const total = ( sell - totalCost )* 1000;
+    console.log(total);
 }
 else {
-    console.log(false);
+    console.log('Valor não pode ser igual a zero')
 }
+
