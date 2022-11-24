@@ -146,17 +146,49 @@
 // }
 
 //exercicio9
-const cost = 1;
+// const cost = 1;
 
-const sell = 2;
+// const sell = 2;
 
-let totalCost = cost * 1.2;
+// let totalCost = cost * 1.2;
 
-if( cost > 0 && sell > 0 ){
-    const total = ( sell - totalCost )* 1000;
-    console.log(total);
-}
-else {
-    console.log('Valor não pode ser igual a zero')
-}
+// if( cost > 0 && sell > 0 ){
+//     const total = ( sell - totalCost )* 1000;
+//     console.log(total);
+// }
+// else {
+//     console.log('Valor não pode ser igual a zero')
+// }
 
+//exercicio10 IMPOSTO DE RENDA
+// ESTOU FALHANDO NA MATEMÁTICA MENTAL
+let aliquotINSS;
+let aliquotIR;
+
+let grossWage = 3000; 
+//calcula salario - INSS
+if (grossWage <= 1556.94){
+    aliquotINSS = grossWage * 0.08; 
+} else if (grossWage <= 2594.92){
+    aliquotINSS = grossWage * 0.09;
+} else if (grossWage <= 5189.82) {
+    aliquotINSS = grossWage * 0.11;
+} else {
+    aliquotINSS = 570.88 ;
+};
+
+let baseSalary = grossWage - aliquotINSS;
+//calcula (salario com desconto INSS) - IR
+if (baseSalary <= 1903.98){
+    aliquotIR = 0;
+}else if (baseSalary <= 2826.65) {
+    aliquotIR = (baseSalary * 0.075) - 142.80;
+}else if (baseSalary <= 3751.05) {
+    aliquotIR = (baseSalary * 0.15) - 354.80;
+}else if (baseSalary <= 4664.68) {
+    aliquotINSS = (baseSalary * 0.225) - 636.13;
+}else {
+    aliquotIR = (baseSalary * 0.275) - 869.36;
+};
+//calculo salario final
+console.log('Salário Líquido: R$' + (baseSalary - aliquotIR));
