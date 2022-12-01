@@ -21,16 +21,48 @@
 // }
 // console.log(letter);
 
-let word = 'tryber';
-let reverseWord = '';
+// let word = 'tryber';
+// let reverseWord = '';
 
-reverseWord = word.split('').reverse().join('');
+// reverseWord = word.split('').reverse().join('');
 
-console.log(reverseWord);
+// console.log(reverseWord);
 
 
 // exercicio 03 - Considere o array de strings abaixo, utilize a estrutura de repetição for para escrever dois algoritmos: um que imprima no console a maior palavra desse array e outro que imprima a menor. Considere o número de caracteres de cada palavra.
 
 // let array = ['java', 'javascript', 'python', 'html', 'css'];
 
+// let biggest = array[0];
+// let smallest = array[0];
+
+// for(index = 0; index < array.length; index += 1) {
+//     if (array[index].length >  biggest.length) {
+//         biggest = array[index];
+//     }
+// }
+// for (index = 0; index < array.length; index += 1) {
+//     if (array[index].length < smallest.length) {
+//         smallest = array[index];
+//     }
+// }
+// console.log(biggest);
+// console.log(smallest);
+
+
 //exercicio 04 - Um número primo é um número inteiro maior do que 1 que possui somente dois divisores, ou seja, é divisível por 1 e por ele mesmo. Sabendo disso, escreva um algoritmo que imprima no console o maior número primo entre 2 e 50.
+
+let biggestPrime = 0;
+
+for(let number = 2; number <= 50; number += 1) {
+    let isPrime = true;
+    for ( let divisor = 2; divisor < number; divisor += 1) {
+        if(number % divisor === 0) {
+            isPrime = false;
+        }
+    }
+    if (isPrime) {
+        biggestPrime = number;
+    }
+}
+console.log(biggestPrime);
