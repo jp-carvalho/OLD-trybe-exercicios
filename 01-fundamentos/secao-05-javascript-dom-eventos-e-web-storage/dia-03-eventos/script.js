@@ -50,3 +50,31 @@ const createBtn = (feriados) => {
 }
 createBtn('Feriados');
 
+const changeBgHoliday = () => {
+  const getHolidayButton = document.querySelector('#btn-holiday');
+  const getHoliday = document.querySelectorAll('.holiday');
+  let backgroundColor =  'rgb(238,238,238)';
+  let setNewColor = 'green';
+
+  getHolidayButton.addEventListener('click', () => {
+    for (let index = 0; index < getHoliday.length; index += 1) {
+      if (getHoliday[index].style.backgroundColor === setNewColor) {
+        getHoliday[index].style.backgroundColor = backgroundColor;
+        getHoliday[index].style.color = '#666'
+      } else {
+        getHoliday[index].style.backgroundColor = setNewColor;
+        getHoliday[index].style.color = 'white';
+      }
+    }
+  });
+}
+changeBgHoliday();
+
+const getFridayBtn = () => {
+  const createFridayBtn = document.querySelector('.buttons-container');
+  const createFridayBtnElement = document.createElement('button');
+  createFridayBtnElement.id = 'btn-friday';
+  createFridayBtnElement.innerHTML = 'Sexta-feira';
+  createFridayBtn.appendChild(createFridayBtnElement);
+}
+getFridayBtn();
