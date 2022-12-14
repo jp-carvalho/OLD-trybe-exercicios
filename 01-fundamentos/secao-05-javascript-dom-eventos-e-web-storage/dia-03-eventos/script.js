@@ -38,6 +38,15 @@ const createMonth = () => {
       createDaysLi.appendChild(dayItem);
     }
   }
-
 }
 createMonth();
+
+const createBtn = (feriados) => {
+  const createButton = document.querySelector('.buttons-container');
+  const createButtonElement = document.createElement('button');
+  createButtonElement.id = 'btn-holiday';
+  createButtonElement.innerHTML = feriados;
+  createButton.appendChild(createButtonElement);
+}
+createBtn('Feriados');
+
