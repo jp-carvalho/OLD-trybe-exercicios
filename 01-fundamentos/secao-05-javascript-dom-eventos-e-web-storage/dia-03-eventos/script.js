@@ -78,3 +78,19 @@ const getFridayBtn = () => {
   createFridayBtn.appendChild(createFridayBtnElement);
 }
 getFridayBtn();
+
+const changeBtnFriday = () => {
+  const getFridayBtn = document.querySelector('#btn-friday');
+  const getFriday = document.querySelector('.friday');
+  let fridayText = 'Sexta-feira!';
+
+  getFridayBtn.addEventListener('click', () => {
+    for ( let index = 0; index < getFriday; index += 1) {
+      if (getFriday[index] === number) {
+        getFriday[index].innerHTML = fridayText;
+      } else {
+
+      }
+    }
+  });
+}
