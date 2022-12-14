@@ -56,8 +56,62 @@
     </style>
   </head>
   <body>
-    <script src="./scripts.js">
+    <script>
       // COLOQUE SEU CÓDIGO AQUI
+      const createH1 = document.createElement('h1');
+      createH1.className = 'title';
+      createH1.innerHTML = 'TrybeTrip - Agência de Viagens'
+      document.body.appendChild(createH1);
+
+      const createMain = document.createElement('main');
+      createMain.className = 'main-content';
+      createMain.style.backgroundColor = 'green';
+      document.body.appendChild(createMain);
+
+      const createSection = document.createElement('section');
+      createSection.className = 'center-content';
+      createMain.appendChild(createSection);
+
+      const createParag = document.createElement('p');
+      createParag.innerHTML = 'Oi bla bla bla';
+      createSection.appendChild(createParag);
+
+      const createSectionLeft = document.createElement('section');
+      createSectionLeft.className = 'left-content';
+      createMain.appendChild(createSectionLeft);
+
+      const createSectionRight = document.createElement('section');
+      createSectionRight.className = 'right-content';
+      createSectionRight.style.marginRight = 'auto';
+      createMain.appendChild(createSectionRight);
+
+      const createImage = document.createElement('img');
+      createImage.className = 'small-image';
+      createImage.src = 'https://picsum.photos/200';
+      createSectionLeft.appendChild(createImage);
+
+      const createUl = document.createElement('ul');
+      createSectionRight.appendChild(createUl);
+      const numbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+        'Sete', 'Oito', 'Nove', 'Dez'];
+        for (let index = 0; index < numbers.length; index += 1) {
+          const createLi = document.createElement('li');
+          createLi.innerHTML = numbers[index];
+          createUl.appendChild(createLi);
+        }
+
+      for (let index = 0; index < 3; index += 1) { 
+        const createH3 = document.createElement('h3');
+        createH3.className = 'description';
+        createMain.appendChild(createH3);
+      }
+
+      const removeSection = document.getElementsByClassName('left-content')[0];
+      createMain.removeChild(removeSection);
+
+      const removeLastLi = document.getElementsByTagName('ul')[0];
+      removeLastLi.lastChild.remove();
+      removeLastLi.lastChild.remove();
     </script>
   </body>
 </html>
