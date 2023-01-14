@@ -13,6 +13,10 @@
   color: white;
 }
 
+h3 {
+  text-decoration: underline;
+}
+
 .header-img {
   width: 70px;
 }
