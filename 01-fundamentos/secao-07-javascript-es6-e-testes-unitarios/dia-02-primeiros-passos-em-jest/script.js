@@ -71,19 +71,45 @@
 
 //EXERCICIO 04
 
-const techList = (array, name) => {
-  if(array.length === 0) return 'Vazio!';
+// const techList = (array, name) => {
+//   if(array.length === 0) return 'Vazio!';
 
-  const sortArray = array.sort();
-  const sortTechList = [];
+//   const sortArray = array.sort();
+//   const sortTechList = [];
 
-  for (let index = 0; index < sortArray.length; index += 1) {
-    sortTechList.push( {
-      tech: sortArray[index],
-      name: name,
-    });
+//   for (let index = 0; index < sortArray.length; index += 1) {
+//     sortTechList.push( {
+//       tech: sortArray[index],
+//       name: name,
+//     });
+//   }
+//   return sortTechList;
+// }
+
+// module.exports = techList;
+
+//===================================================================================
+
+//EXERCICIO 05
+const hydrate = (string) => {
+  const splitString = string.split('');
+  let water = 0;
+
+  for (let index = 0; index < splitString.length; index += 1) {
+    const checkParseCharacter = parseInt(splitString[index]);
+
+    if (checkParseCharacter) {
+      water += checkParseCharacter;
+    }
   }
-  return sortTechList;
+
+  let glass = 'copo';
+
+  if ( water > 1) {
+    glass = 'copos';
+  }
+
+  return `${water} ${glass} de água`;
 }
 
-module.exports = techList;
+module.exports = hydrate;
