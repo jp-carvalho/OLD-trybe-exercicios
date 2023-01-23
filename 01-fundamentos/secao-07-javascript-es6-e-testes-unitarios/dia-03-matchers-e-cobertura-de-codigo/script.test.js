@@ -48,15 +48,20 @@
 // });
 
 //exercicio 04
-const {info, printMessage} = require('./script');
-describe('testa a função printMessage', () => {
-  it('testa se o erro é lançado com objeto invalido', () => {
-    const testeteste = {
-      origem: 'Pato Donald',
-      nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
-    }
-    expect( () => printMessage()).toThrow();
-    expect(() => printMessage(testeteste)).toThrow();
-  })
-})
+// const {info, printMessage} = require('./script');
+// describe('testa a função printMessage', () => {
+//   it('testa se o erro é lançado com objeto invalido', () => {
+//     const testeteste = {
+//       origem: 'Pato Donald',
+//       nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
+//     }
+//     expect(() => printMessage()).toThrow();
+//     expect(() => printMessage(testeteste)).toThrow();
+//   })
+// })
 
+//EXERCICIO BONUS
+const board = require('./script');
+describe('testa a função searchEmployee', () => {
+  it('testa ')
+})
