@@ -22,16 +22,24 @@
 // });
 
 //exercicio 01
-const sum = require('./script');
+// const sum = require('./script');
 
-describe('Testa a função sum', () => {
-  it('Teste se o resultado da soma', () =>{
-    expect(sum(4, 5)).toBe(9);
-    expect(sum(0, 0)).toBe(0);
+// describe('Testa a função sum', () => {
+//   it('Teste se o resultado da soma', () =>{
+//     expect(sum(4, 5)).toBe(9);
+//     expect(sum(0, 0)).toBe(0);
+//   });
+//   it('Teste erro caso seja lançada uma string', () => {
+//     expect( () => sum(4, '5')).toThrowError();
+//     expect( () => sum(4, '5')).toThrowError('parameters must be numbers');
+//   })
+// });
+
+//exercicio 02
+const {info} = require('./script');
+
+describe('Testa a função printMessage', () => {
+  it('Testa se o objeto possui a propriedade personagem', () => {
+    expect(info).toHaveProperty('personagem');
   });
-  it('Teste erro caso seja lançada uma string', () => {
-    expect( () => sum(4, '5')).toThrowError();
-    expect( () => sum(4, '5')).toThrowError('parameters must be numbers');
-  })
 });
-
