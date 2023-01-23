@@ -35,11 +35,16 @@
 //   })
 // });
 
-//exercicio 02
-const {info} = require('./script');
+//exercicio 02 / exercicio 03
+const {info, printMessage} = require('./script');
 
 describe('Testa a função printMessage', () => {
   it('Testa se o objeto possui a propriedade personagem', () => {
     expect(info).toHaveProperty('personagem');
   });
+  it('testa a resposta', () => {
+    expect(printMessage('Tio Patinhas')).toMatch('Boas vindas,');
+  })
 });
+
+

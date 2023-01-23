@@ -27,8 +27,8 @@
 // }
 // module.exports = sum;
 
-//exercicio 02
-// printMessage.js
+//exercicio 02 / exercicio 03
+//printMessage.js
 let info = {
   personagem: 'Margarida',
   origem: 'Pato Donald',
@@ -42,3 +42,5 @@ const printMessage = (characterInfo) => {
 console.log(printMessage(info));
 
 module.exports = { info, printMessage };
+
+
