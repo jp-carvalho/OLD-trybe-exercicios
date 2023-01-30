@@ -25,3 +25,18 @@ const totalSum = numbers.reduce((acc, curr) => {
 
 console.log(`valor final do acc é ${totalSum}`);
 // por fim, esse `console.log` imprime o retorno da nossa função, que é o valor final de `acc` após cada uma das 5 iterações, tendo iniciado com valor 30.
+
+const valorItens = [1, 32, 44, 2, 3];
+
+valorItens.reduce((acc, curr) => {
+  console.log(`acumulador - acc:`, acc);
+  console.log(`valorAtual - curr:`, curr);
+}, 0);
+
+valorItens.reduce((acc, curr) => {
+  console.log(`acc:`, acc);
+  console.log(`curr:`, curr);
+  console.log('a soma atual é', acc + curr);
+
+  return acc + curr;
+}, 0);
