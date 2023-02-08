@@ -8,6 +8,7 @@ const moreStudents = [
 ];
 
 // Escreva seu código aqui
+// Para desestruturar uma array dentro de outra array, deve-se atentar à abertura e fechamento dos colchetes dentro da desestruturação.
 const [student1, [student2, student3], [student4, student5]] = moreStudents;
 
 console.log(student1, student2, student3, student4, student5);
