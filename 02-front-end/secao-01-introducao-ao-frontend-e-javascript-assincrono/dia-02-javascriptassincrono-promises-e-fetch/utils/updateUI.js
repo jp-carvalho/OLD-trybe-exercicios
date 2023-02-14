@@ -5,7 +5,7 @@ export function fillUsersSelect(users) {
   const usersSelect = document.querySelector('#users-select');
 
   // Faz uma iteração entre todos os itens do array
-  users.map((user) => {
+  users.forEach((user) => {
     // Cria um novo elemento do tipo option
     const opt = document.createElement('option');
     // Define o atributo value com o valor do id da pessoa
@@ -51,7 +51,7 @@ export function fillPosts(posts) {
   relatedPostsSection.appendChild(relatedTitle);
 
   // Faz uma iteração entre os posts restantes
-  internalPostsArray.map((post) => {
+  internalPostsArray.forEach((post) => {
     // Cria um novo elemento com o título do post e adiciona ao DOM
     const p = document.createElement('p');
     p.innerText = post.title;
@@ -74,7 +74,7 @@ export function fillFeaturedPostComments(comments) {
   commentsSection.appendChild(title);
 
   // Faz uma iteração entre os comentários
-  comments.map((comment) => {
+  comments.forEach((comment) => {
     // Cria um novo elemento com o conteúdo do comentário e adiciona ao DOM
     const p = document.createElement('p');
     p.innerText = comment.body;
