@@ -1,10 +1,16 @@
-import logo from './logo.svg';
+import React, { Component } from 'react'
 import './App.css';
 
-function App() {
-  return (
+function handleClick() {
+  console.log('click')
+}
 
-  );
+class App extends Component {
+  render() {
+    return (
+      <button onClick={handleClick}>My Button</button>
+    )
+  }
 }
 
 export default App;
