@@ -4,16 +4,16 @@ class App extends Component {
 	constructor() {
 		super()
 
-		this.state = {
-			clickButtonOne: 0,
-			clickButtonTwo: 0,
-			clickButtonThree: 0,
-		};
-
 		this.handleClickOne = this.handleClickOne.bind(this)
 		this.handleClickTwo = this.handleClickTwo.bind(this)
 		this.handleClickThree = this.handleClickThree.bind(this)
 	}
+
+state = {
+	clickButtonOne: 0,
+	clickButtonTwo: 0,
+	clickButtonThree: 0,
+	};
 
 handleClickOne() {
 	this.setState((prevState) => ({
@@ -40,8 +40,8 @@ render(){
 	return(
 	<>
 		<button onClick={this.handleClickOne}>{ clickButtonOne }</button>
-		<button onClick={this.handleClickTwo}>{`Cliques botão 2: ${clickButtonTwo}`}</button>
-		<button onClick={this.handleClickThree}>{`Valor Total 3: ${clickButtonThree}`}</button>
+		<button onClick={this.handleClickTwo}>{`Cliques botão: ${clickButtonTwo}`}</button>
+		<button onClick={this.handleClickThree}>{`Valor Total deste: ${clickButtonThree}`}</button>
 	</>
 )}
 }
