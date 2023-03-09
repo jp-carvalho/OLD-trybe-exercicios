@@ -24,7 +24,7 @@ handleChange({ target }) {
 }
 
   render() {
-    const { name, email, age, anecdote, terms } = this.state;
+    const { name, email, age, anecdote } = this.state;
 
     return(
       <form >
