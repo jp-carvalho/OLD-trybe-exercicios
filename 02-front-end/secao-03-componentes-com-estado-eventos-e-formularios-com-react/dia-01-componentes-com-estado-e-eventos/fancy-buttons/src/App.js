@@ -13,11 +13,9 @@ class App extends Component {
   }
 
   handleFirstBtn = () => {
-    // porque adicionar o this.state?
     const { clicksOne } = this.state;
     this.setState((prevState) => ({
       clicksOne: prevState.clicksOne + 1,
-    // porque a função aqui vai direto com {} em vez de ({}) como a de cima??
     }), () => {
       console.log(`Botão 1 ${this.getButtonColor(clicksOne)}`);
     })
